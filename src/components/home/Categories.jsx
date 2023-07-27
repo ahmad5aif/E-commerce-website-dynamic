@@ -17,20 +17,33 @@ function Categories() {
 
       <div className="grid justify-center items-center lg:grid-cols-5 md:grid-cols-4 sm:grid-cols-3 grid-cols-3 gap-4 place-items-center place-content-center lg:gap-y-8 w-[80vw] sm:w-auto">
         <div
-          className="md:h-44 md:w-44 sm:h-24 sm:w-24 h-16 w-16 overflow-hidden  rounded-lg sm:opacity-0 lg:opacity-100 flex 
+          id="apple"
+          className="md:h-36 md:w-36 sm:h-24 sm:w-24 h-16 w-16 overflow-hidden  rounded-lgopacity-100 flex 
         justify-center items-center hover:backdrop-filter hover:bg-slate-100 hover:scale-95 transition-all delay-75"
         >
           <svg
             viewBox="0 0 14 44"
             width="48"
             height="48"
-            className="sm:h-60 sm:w-60 h-32 w-32"
+            className="sm:h-60 sm:w-60 h-28 w-28"
             xmlns="http://www.w3.org/2000/svg"
           >
             <path d="m13.0729 17.6825a3.61 3.61 0 0 0 -1.7248 3.0365 3.5132 3.5132 0 0 0 2.1379 3.2223 8.394 8.394 0 0 1 -1.0948 2.2618c-.6816.9812-1.3943 1.9623-2.4787 1.9623s-1.3633-.63-2.613-.63c-1.2187 0-1.6525.6507-2.644.6507s-1.6834-.9089-2.4787-2.0243a9.7842 9.7842 0 0 1 -1.6628-5.2776c0-3.0984 2.014-4.7405 3.9969-4.7405 1.0535 0 1.9314.6919 2.5924.6919.63 0 1.6112-.7333 2.8092-.7333a3.7579 3.7579 0 0 1 3.1604 1.5802zm-3.7284-2.8918a3.5615 3.5615 0 0 0 .8469-2.22 1.5353 1.5353 0 0 0 -.031-.32 3.5686 3.5686 0 0 0 -2.3445 1.2084 3.4629 3.4629 0 0 0 -.8779 2.1585 1.419 1.419 0 0 0 .031.2892 1.19 1.19 0 0 0 .2169.0207 3.0935 3.0935 0 0 0 2.1586-1.1368z"></path>
           </svg>
         </div>
+
         <div
+          className="md:h-44 md:w-44 sm:h-24 sm:w-24 h-16 w-16 hover:bg-slate-100 hover:scale-95 transition-all delay-75 
+        overflow-hidden rounded-lg flex justify-center items-center opacity-100"
+        >
+          <img
+            src="data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgODAgMjQiIHdpZHRoPSI4MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIj48cGF0aCBkPSJtMCAwaDgwdjI0aC04MHoiIGZpbGw9IiNmZmM5MTUiLz48cGF0aCBkPSJtMzMuMDIgNy4xNDg4ODg4OWMxLjI1MzMzMzMgMCAyLjQ2MjIyMjIuNDI0NDQ0NDQgMy4zNzc3Nzc4IDEuMTc1NTU1NTV2LTEuMDA0NDQ0NDRoMS43MTc3Nzc4djEwLjkzMTExMTFoLTEuNzE3Nzc3OHYtMWMtLjkuNzQ2NjY2Ny0yLjEwODg4ODkgMS4xNjg4ODg5LTMuMzc3Nzc3OCAxLjE2ODg4ODktMS41NTU1NTU2IDAtMi45NzExMTExLS41NzU1NTU2LTMuOTg0NDQ0NC0xLjYyLTEuMDA0NDQ0NS0xLjAzMTExMTEtMS41NTU1NTU2LTIuNDUzMzMzMy0xLjU1NTU1NTYtNC4wMDY2NjY3IDAtMS41NTU1NTU1LjU1MzMzMzMtMi45ODIyMjIxOSAxLjU1NTU1NTYtNC4wMTc3Nzc3NCAxLjAxNTU1NTUtMS4wNDg4ODg4OSAyLjQzMTExMTEtMS42MjY2NjY2NyAzLjk4NDQ0NDQtMS42MjY2NjY2N3ptLTExLjg5MTExMTEtLjA0YzEuNDA2NjY2NyAwIDIuNjgyMjIyMi41MTMzMzMzMyAzLjU5NTU1NTUgMS40NDg4ODg4OS45NzExMTEyLjk5NTU1NTU1IDEuNDg4ODg4OSAyLjM5MzMzMzMyIDEuNSA0LjA0NjY2NjYydi41NjIyMjIzaC04Ljg0NjY2NjZjLjEwNjY2NjYgMi4wNTMzMzMzIDEuNjczMzMzMyAzLjU3Nzc3NzcgMy43MTExMTExIDMuNTc3Nzc3NyAxLjQ2MjIyMjIgMCAyLjUwODg4ODktLjYyNDQ0NDQgMy4yOTU1NTU1LTEuOTY0NDQ0NGwuMDk1NTU1Ni0uMTYyMjIyMiAxLjQ4ODg4ODkuOTU3Nzc3OC0uMDg2NjY2Ny4xNDg4ODg4Yy0xLjAwODg4ODkgMS43MzU1NTU2LTIuNjY2NjY2NiAyLjY1MzMzMzQtNC43OTU1NTU1IDIuNjUzMzMzNC0zLjIxMTExMTEgMC01LjQ1MzMzMzQtMi4zMTMzMzM0LTUuNDUzMzMzNC01LjYyNDQ0NDUgMC0zLjI3MTExMTA4IDIuMzExMTExMS01LjY0NDQ0NDQxIDUuNDk1NTU1Ni01LjY0NDQ0NDQxem00NS42OTU1NTU1IDBjMS40MDY2NjY3IDAgMi42ODIyMjIzLjUxMzMzMzMzIDMuNTk1NTU1NiAxLjQ0ODg4ODg5Ljk3MTExMTEuOTk1NTU1NTUgMS40ODg4ODg5IDIuMzkzMzMzMzIgMS41IDQuMDQ2NjY2NjJ2LjU2MjIyMjNoLTguODQ2NjY2N2MuMTA2NjY2NyAyLjA1MzMzMzMgMS42NzMzMzM0IDMuNTc3Nzc3NyAzLjcxMTExMTEgMy41Nzc3Nzc3IDEuNDYyMjIyMyAwIDIuNTA4ODg4OS0uNjI0NDQ0NCAzLjI5NTU1NTYtMS45NjQ0NDQ0bC4wOTU1NTU2LS4xNjIyMjIyIDEuNDg4ODg4OC45NTc3Nzc4LS4wODY2NjY2LjE0ODg4ODhjLTEuMDA4ODg4OSAxLjczNTU1NTYtMi42NjY2NjY3IDIuNjUzMzMzNC00Ljc5NTU1NTYgMi42NTMzMzM0LTMuMjExMTExMSAwLTUuNDUzMzMzMy0yLjMxMzMzMzQtNS40NTU1NTU1LTUuNjI0NDQ0NSAwLTMuMjcxMTExMDggMi4zMTMzMzMzLTUuNjQ0NDQ0NDEgNS40OTc3Nzc3LTUuNjQ0NDQ0NDF6bS01MS44NTMzMzMzLjE4ODg4ODg5djEuNjMzMzMzMzNoLTQuOTc3Nzc3Nzd2OS4zMTc3Nzc3OWgtMS43Mzc3Nzc3N3YtMTAuOTUxMTExMTJ6bTQwLjg0LS4xNDg4ODg4OWMyLjQ4ODg4ODkgMCA0LjAzNTU1NTYgMS43MDg4ODg4OSA0LjAzNTU1NTYgNC40NjAwMDAwMXY2LjYyaC0xLjczNzc3Nzh2LTYuNjJjMC0xLjcxNzc3Nzc5LS45ODQ0NDQ1LTIuODI2NjY2NjgtMi41MDg4ODg5LTIuODI2NjY2NjgtMS45NiAwLTIuNjU3Nzc3OCAxLjM1MTExMTA4LTIuNjU3Nzc3OCAyLjYxNTU1NTU4djYuODMzMzMzM2gtMS43Mzc3Nzc4di02LjYyYzAtMS43NDQ0NDQ0My0uOTUzMzMzMy0yLjgyNjY2NjY2LTIuNDg4ODg4OC0yLjgyNjY2NjY2LTEuMjY0NDQ0NSAwLTIuNjE1NTU1Ni45ODIyMjIyMy0yLjYxNTU1NTYgMi40NDQ0NDQ0NnY2Ljk5NTU1NTVoLTEuNzM3Nzc3OHYtMTAuOTI4ODg4ODRoMS43Mzc3Nzc4djEuMDZjLjcxNzc3NzgtLjc4MjIyMjIzIDEuNzQtMS4yMDY2NjY2NyAyLjkzMzMzMzMtMS4yMDY2NjY2NyAxLjc2NjY2NjcgMCAyLjczMzMzMzQuODkzMzMzMzMgMy4yNTMzMzM0IDEuNzQuNzkxMTExMS0xLjEwODg4ODg5IDIuMDU3Nzc3Ny0xLjc0IDMuNTI0NDQ0NC0xLjc0em0tMTMuNzA0NDQ0NC0zLjA3Nzc3Nzc4djE0LjE1Nzc3Nzc5aC0xLjczNzc3Nzh2LTE0LjE1Nzc3Nzc5em0tOS4xNzMzMzM0IDQuODE3Nzc3NzhjLTIuMTE3Nzc3NyAwLTMuNzE1NTU1NSAxLjY4MDAwMDAxLTMuNzE1NTU1NSAzLjkwNjY2NjcxIDAgMi4yMTU1NTU1IDEuNTk3Nzc3OCAzLjg4NDQ0NDQgMy43MTU1NTU1IDMuODg2NjY2NiAyLjE5Nzc3NzggMCAzLjY3MzMzMzQtMS41NjIyMjIyIDMuNjczMzMzNC0zLjg4NjY2NjYgMC0yLjMzNTU1NTYtMS40NzU1NTU2LTMuOTA2NjY2NzEtMy42NzMzMzM0LTMuOTA2NjY2NzF6bS0xMS44NDQ0NDQ0LS4xNDg4ODg4OWMtMS43NTExMTExIDAtMy4yMTMzMzMzIDEuMTY0NDQ0NDQtMy42MzExMTExIDIuODU3Nzc3OGg3Yy0uMzA2NjY2Ny0xLjcxNzc3NzgtMS42MzU1NTU2LTIuODU3Nzc3OC0zLjM2ODg4ODktMi44NTc3Nzc4em00NS42OTMzMzMzIDBjLTEuNzUxMTExMSAwLTMuMjEzMzMzMyAxLjE2NDQ0NDQ0LTMuNjMxMTExMSAyLjg1Nzc3NzhoN2MtLjMwNjY2NjctMS43MTc3Nzc4LTEuNjM1NTU1NS0yLjg1Nzc3NzgtMy4zNjg4ODg5LTIuODU3Nzc3OHoiIGZpbGw9IiMxMTEiLz48L2c+PC9zdmc+"
+            alt=""
+            className="h-full w-full object-contain object-center"
+          />
+        </div>
+        <div
+          id="xiaomi"
           className="md:h-44 md:w-44 sm:h-24 sm:w-24 h-16 w-16 hover:bg-slate-100 hover:scale-95 transition-all delay-75 
         overflow-hidden rounded-lg flex justify-center items-center"
         >
@@ -40,12 +53,13 @@ function Categories() {
             className="sm:h-20 sm:w-20 h-14 w-14 object-cover object-center rounded-[30%]"
           />
         </div>
+
         <div
           className="md:h-44 md:w-44 sm:h-24 sm:w-24 h-16 w-16 hover:bg-slate-100 hover:scale-95 transition-all delay-75 
-        overflow-hidden rounded-lg flex justify-center items-center sm:opacity-0 lg:opacity-100"
+        overflow-hidden rounded-lg flex justify-center items-center opacity-100"
         >
           <img
-            src="data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgODAgMjQiIHdpZHRoPSI4MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIj48cGF0aCBkPSJtMCAwaDgwdjI0aC04MHoiIGZpbGw9IiNmZmM5MTUiLz48cGF0aCBkPSJtMzMuMDIgNy4xNDg4ODg4OWMxLjI1MzMzMzMgMCAyLjQ2MjIyMjIuNDI0NDQ0NDQgMy4zNzc3Nzc4IDEuMTc1NTU1NTV2LTEuMDA0NDQ0NDRoMS43MTc3Nzc4djEwLjkzMTExMTFoLTEuNzE3Nzc3OHYtMWMtLjkuNzQ2NjY2Ny0yLjEwODg4ODkgMS4xNjg4ODg5LTMuMzc3Nzc3OCAxLjE2ODg4ODktMS41NTU1NTU2IDAtMi45NzExMTExLS41NzU1NTU2LTMuOTg0NDQ0NC0xLjYyLTEuMDA0NDQ0NS0xLjAzMTExMTEtMS41NTU1NTU2LTIuNDUzMzMzMy0xLjU1NTU1NTYtNC4wMDY2NjY3IDAtMS41NTU1NTU1LjU1MzMzMzMtMi45ODIyMjIxOSAxLjU1NTU1NTYtNC4wMTc3Nzc3NCAxLjAxNTU1NTUtMS4wNDg4ODg4OSAyLjQzMTExMTEtMS42MjY2NjY2NyAzLjk4NDQ0NDQtMS42MjY2NjY2N3ptLTExLjg5MTExMTEtLjA0YzEuNDA2NjY2NyAwIDIuNjgyMjIyMi41MTMzMzMzMyAzLjU5NTU1NTUgMS40NDg4ODg4OS45NzExMTEyLjk5NTU1NTU1IDEuNDg4ODg4OSAyLjM5MzMzMzMyIDEuNSA0LjA0NjY2NjYydi41NjIyMjIzaC04Ljg0NjY2NjZjLjEwNjY2NjYgMi4wNTMzMzMzIDEuNjczMzMzMyAzLjU3Nzc3NzcgMy43MTExMTExIDMuNTc3Nzc3NyAxLjQ2MjIyMjIgMCAyLjUwODg4ODktLjYyNDQ0NDQgMy4yOTU1NTU1LTEuOTY0NDQ0NGwuMDk1NTU1Ni0uMTYyMjIyMiAxLjQ4ODg4ODkuOTU3Nzc3OC0uMDg2NjY2Ny4xNDg4ODg4Yy0xLjAwODg4ODkgMS43MzU1NTU2LTIuNjY2NjY2NiAyLjY1MzMzMzQtNC43OTU1NTU1IDIuNjUzMzMzNC0zLjIxMTExMTEgMC01LjQ1MzMzMzQtMi4zMTMzMzM0LTUuNDUzMzMzNC01LjYyNDQ0NDUgMC0zLjI3MTExMTA4IDIuMzExMTExMS01LjY0NDQ0NDQxIDUuNDk1NTU1Ni01LjY0NDQ0NDQxem00NS42OTU1NTU1IDBjMS40MDY2NjY3IDAgMi42ODIyMjIzLjUxMzMzMzMzIDMuNTk1NTU1NiAxLjQ0ODg4ODg5Ljk3MTExMTEuOTk1NTU1NTUgMS40ODg4ODg5IDIuMzkzMzMzMzIgMS41IDQuMDQ2NjY2NjJ2LjU2MjIyMjNoLTguODQ2NjY2N2MuMTA2NjY2NyAyLjA1MzMzMzMgMS42NzMzMzM0IDMuNTc3Nzc3NyAzLjcxMTExMTEgMy41Nzc3Nzc3IDEuNDYyMjIyMyAwIDIuNTA4ODg4OS0uNjI0NDQ0NCAzLjI5NTU1NTYtMS45NjQ0NDQ0bC4wOTU1NTU2LS4xNjIyMjIyIDEuNDg4ODg4OC45NTc3Nzc4LS4wODY2NjY2LjE0ODg4ODhjLTEuMDA4ODg4OSAxLjczNTU1NTYtMi42NjY2NjY3IDIuNjUzMzMzNC00Ljc5NTU1NTYgMi42NTMzMzM0LTMuMjExMTExMSAwLTUuNDUzMzMzMy0yLjMxMzMzMzQtNS40NTU1NTU1LTUuNjI0NDQ0NSAwLTMuMjcxMTExMDggMi4zMTMzMzMzLTUuNjQ0NDQ0NDEgNS40OTc3Nzc3LTUuNjQ0NDQ0NDF6bS01MS44NTMzMzMzLjE4ODg4ODg5djEuNjMzMzMzMzNoLTQuOTc3Nzc3Nzd2OS4zMTc3Nzc3OWgtMS43Mzc3Nzc3N3YtMTAuOTUxMTExMTJ6bTQwLjg0LS4xNDg4ODg4OWMyLjQ4ODg4ODkgMCA0LjAzNTU1NTYgMS43MDg4ODg4OSA0LjAzNTU1NTYgNC40NjAwMDAwMXY2LjYyaC0xLjczNzc3Nzh2LTYuNjJjMC0xLjcxNzc3Nzc5LS45ODQ0NDQ1LTIuODI2NjY2NjgtMi41MDg4ODg5LTIuODI2NjY2NjgtMS45NiAwLTIuNjU3Nzc3OCAxLjM1MTExMTA4LTIuNjU3Nzc3OCAyLjYxNTU1NTU4djYuODMzMzMzM2gtMS43Mzc3Nzc4di02LjYyYzAtMS43NDQ0NDQ0My0uOTUzMzMzMy0yLjgyNjY2NjY2LTIuNDg4ODg4OC0yLjgyNjY2NjY2LTEuMjY0NDQ0NSAwLTIuNjE1NTU1Ni45ODIyMjIyMy0yLjYxNTU1NTYgMi40NDQ0NDQ0NnY2Ljk5NTU1NTVoLTEuNzM3Nzc3OHYtMTAuOTI4ODg4ODRoMS43Mzc3Nzc4djEuMDZjLjcxNzc3NzgtLjc4MjIyMjIzIDEuNzQtMS4yMDY2NjY2NyAyLjkzMzMzMzMtMS4yMDY2NjY2NyAxLjc2NjY2NjcgMCAyLjczMzMzMzQuODkzMzMzMzMgMy4yNTMzMzM0IDEuNzQuNzkxMTExMS0xLjEwODg4ODg5IDIuMDU3Nzc3Ny0xLjc0IDMuNTI0NDQ0NC0xLjc0em0tMTMuNzA0NDQ0NC0zLjA3Nzc3Nzc4djE0LjE1Nzc3Nzc5aC0xLjczNzc3Nzh2LTE0LjE1Nzc3Nzc5em0tOS4xNzMzMzM0IDQuODE3Nzc3NzhjLTIuMTE3Nzc3NyAwLTMuNzE1NTU1NSAxLjY4MDAwMDAxLTMuNzE1NTU1NSAzLjkwNjY2NjcxIDAgMi4yMTU1NTU1IDEuNTk3Nzc3OCAzLjg4NDQ0NDQgMy43MTU1NTU1IDMuODg2NjY2NiAyLjE5Nzc3NzggMCAzLjY3MzMzMzQtMS41NjIyMjIyIDMuNjczMzMzNC0zLjg4NjY2NjYgMC0yLjMzNTU1NTYtMS40NzU1NTU2LTMuOTA2NjY2NzEtMy42NzMzMzM0LTMuOTA2NjY2NzF6bS0xMS44NDQ0NDQ0LS4xNDg4ODg4OWMtMS43NTExMTExIDAtMy4yMTMzMzMzIDEuMTY0NDQ0NDQtMy42MzExMTExIDIuODU3Nzc3OGg3Yy0uMzA2NjY2Ny0xLjcxNzc3NzgtMS42MzU1NTU2LTIuODU3Nzc3OC0zLjM2ODg4ODktMi44NTc3Nzc4em00NS42OTMzMzMzIDBjLTEuNzUxMTExMSAwLTMuMjEzMzMzMyAxLjE2NDQ0NDQ0LTMuNjMxMTExMSAyLjg1Nzc3NzhoN2MtLjMwNjY2NjctMS43MTc3Nzc4LTEuNjM1NTU1NS0yLjg1Nzc3NzgtMy4zNjg4ODg5LTIuODU3Nzc3OHoiIGZpbGw9IiMxMTEiLz48L2c+PC9zdmc+"
+            src="https://dlcdnimgs.asus.com/images/logo/logo-001.svg"
             alt=""
             className="h-full w-full object-contain object-center"
           />
@@ -53,20 +67,20 @@ function Categories() {
 
         <div
           className="md:h-44 md:w-44 sm:h-24 sm:w-24 h-16 w-16 hover:bg-slate-100 hover:scale-95 transition-all delay-75 
-        overflow-hidden rounded-lg flex justify-center items-center"
+        overflow-hidden rounded-lg flex justify-center items-center opacity-100"
         >
           <img
-            src="https://seeklogo.com/images/O/oneplus-logo-8454565195-seeklogo.com.png"
+            src="https://brmotorolanew.vtexassets.com/arquivos/c-rd-motorola@2x.png?v=637459707056400000"
             alt=""
-            className="sm:h-20 sm:w-20 h-16 w-16 object-contain object-center"
+            className="h-full w-full object-contain object-center"
           />
         </div>
         <div
           className="md:h-44 md:w-44 sm:h-24 sm:w-24 h-16 w-16 hover:bg-slate-100 hover:scale-95 transition-all delay-75 
-        overflow-hidden rounded-lg flex justify-center items-center sm:opacity-0 lg:opacity-100"
+        overflow-hidden rounded-lg flex justify-center items-center opacity-100"
         >
           <img
-            src="https://dlcdnimgs.asus.com/images/logo/logo-001.svg"
+            src="https://seeklogo.com/images/S/samsung-logo-4BDAA5DC5B-seeklogo.com.png"
             alt=""
             className="h-full w-full object-contain object-center"
           />
@@ -83,27 +97,7 @@ function Categories() {
         </div>
         <div
           className="md:h-44 md:w-44 sm:h-24 sm:w-24 h-16 w-16 hover:bg-slate-100 hover:scale-95 transition-all delay-75 
-        overflow-hidden rounded-lg flex justify-center items-center sm:opacity-0 lg:opacity-100"
-        >
-          <img
-            src="https://brmotorolanew.vtexassets.com/arquivos/c-rd-motorola@2x.png?v=637459707056400000"
-            alt=""
-            className="h-full w-full object-contain object-center"
-          />
-        </div>
-        <div
-          className="md:h-44 md:w-44 sm:h-24 sm:w-24 h-16 w-16 hover:bg-slate-100 hover:scale-95 transition-all delay-75 
-        overflow-hidden rounded-lg flex justify-center items-center sm:opacity-0 lg:opacity-100"
-        >
-          <img
-            src="https://seeklogo.com/images/S/samsung-logo-4BDAA5DC5B-seeklogo.com.png"
-            alt=""
-            className="h-full w-full object-contain object-center"
-          />
-        </div>
-        <div
-          className="md:h-44 md:w-44 sm:h-24 sm:w-24 h-16 w-16 hover:bg-slate-100 hover:scale-95 transition-all delay-75 
-        overflow-hidden rounded-lg flex justify-center items-center sm:opacity-0 lg:opacity-100"
+        overflow-hidden rounded-lg flex justify-center items-center opacity-100"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -143,9 +137,10 @@ function Categories() {
             ></path>
           </svg>
         </div>
+
         <div
           className="md:h-44 md:w-44 sm:h-24 sm:w-24 h-16 w-16 hover:bg-slate-100 hover:scale-95 transition-all delay-75 
-        overflow-hidden rounded-lg flex justify-center items-center"
+        overflow-hidden rounded-lg justify-center hidden md:flex items-center"
         >
           <svg
             width="72px"
@@ -205,6 +200,16 @@ function Categories() {
               </g>
             </g>
           </svg>
+        </div>
+        <div
+          className="md:h-44 md:w-44 sm:h-24 sm:w-24 h-16 w-16 hover:bg-slate-100 hover:scale-95 transition-all delay-75 
+        overflow-hidden rounded-lg flex justify-center items-center"
+        >
+          <img
+            src="https://seeklogo.com/images/O/oneplus-logo-8454565195-seeklogo.com.png"
+            alt=""
+            className="sm:h-20 sm:w-20 h-16 w-16 object-contain object-center"
+          />
         </div>
       </div>
     </div>

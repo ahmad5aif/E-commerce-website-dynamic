@@ -9,7 +9,7 @@ import Cart from "./pages/Cart";
 import { Provider } from "react-redux";
 import { store } from "./hooks/reduxStore";
 import "./App.css";
-import EmptyCart from "./pages/EmptyCart";
+import PageNotFound from "./pages/PageNotFound";
 
 function App() {
   return (
@@ -21,9 +21,9 @@ function App() {
             <Route path="/shop" element={<Shop />} />
             <Route path="/shop/:productId" element={<Product />} />
             <Route path="/cart/:userId" element={<Cart />} />
-            <Route path="/cart" element={<EmptyCart />} />
             <Route path="/register" element={<Register />} />
             <Route path="/signin" element={<SignIn />} />
+            <Route path="*" element={<PageNotFound />} />
           </Route>
         </Routes>
       </Provider>

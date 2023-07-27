@@ -31,6 +31,8 @@ function SignIn() {
         user.password
       ).then((data) => {
         console.log(data.user);
+        dispatch(userData(data.user.displayName));
+        dispatch(userData(data.user.email));
         dispatch(userData(data.user.uid));
       });
 

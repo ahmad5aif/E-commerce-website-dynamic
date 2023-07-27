@@ -54,7 +54,7 @@ const ProductCard = ({
   return (
     <>
       <div className="group/item relative">
-        <div className="lg:w-full lg:h-60 md:w-48 md:h-48 sm:h-60 sm:w-60 w-36 h-36 overflow-hidden rounded-md bg-gray-200 group-hover/item:opacity-75">
+        <div className="mx-auto lg:w-full lg:h-60 md:w-48 md:h-48 sm:h-60 sm:w-60 w-40 h-40 overflow-hidden rounded-md bg-gray-200 group-hover/item:opacity-75">
           <Link to={"/shop/" + id}>
             <img
               src={imgUrl}
@@ -65,18 +65,19 @@ const ProductCard = ({
         </div>
         <div className="mt-2 flex justify-between items-stretch flex-col">
           <div>
-            <p className="text-sm text-gray-800 capitalize">{brandName}</p>
-            <h3 className="text-lg font-medium text-gray-900 capitalize">
+            <p className="text-sm text-gray-800 capitalize mb-1">{brandName}</p>
+            <h3 className="text-lg font-medium text-gray-900 capitalize mb-2">
               {productName}
             </h3>
-            <span className="text-sm font-medium line-through text-red-500">
-              ₹{parseInt(productPrice) + 3850}
-            </span>
-            <span className="text-md font-bold text-gray-800 ">
+
+            <span className="text-md font-semibold text-gray-800 mr-2">
               {" " + "₹" + productPrice}
             </span>
+            <span className="text-xs font-medium line-through text-red-500 ">
+              ₹{parseInt(productPrice) + 3850}
+            </span>
           </div>
-          <div className="sm:w-full mt-2 flex justify-center divide-x divide-gray-900/5 bg-gray-50 invisible sm:group-hover/item:visible">
+          <div className="sm:w-full sm:mt-1 flex justify-center divide-x divide-gray-900/5 bg-gray-50 invisible sm:group-hover/item:visible">
             {!isCisked ? (
               <>
                 <button

@@ -1,12 +1,5 @@
 import React from "react";
 
-const links = [
-  { name: "Internship program", href: "#" },
-  { name: "Meet our leadership", href: "#" },
-  { name: "Open roles", href: "#" },
-  { name: "Our values", href: "#" },
-];
-
 const stats = [
   { name: "Offices worldwide", value: "12" },
   { name: "Colleagues", value: "300+" },
@@ -143,14 +136,14 @@ const About = ({ scrollRef }) => {
       <div
         ref={scrollRef}
         id="about-section"
-        className="relative isolate overflow-hidden bg-transparent pt-16 sm:pt-4 sm:px-24 md:px-20 border-t-1 bg-slate-100"
+        className="relative isolate overflow-hidden bg-transparent py-6 sm:mb-6 sm:py-4 sm:px-24 md:px-20 border-t-1 bg-gray-200"
       >
         <div className="mx-auto max-w-full px-6">
-          <div className="mx-auto max-w-2xl lg:mx-0 sm:px-0 px-6">
-            <div className="flex items-center gap-3">
+          <div className="mx-auto  lg:mx-0 sm:px-0">
+            <div className="flex items-center gap-0">
               <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl text-start ">
                 Work with us
-                <p className="text-4xl font-bold tracking-tight text-red-600 sm:text-6xl text-start mt-4">
+                <p className="text-4xl font-bold tracking-tight text-red-500 sm:text-6xl text-start sm:mt-4 mt-1">
                   Reach out
                 </p>
               </h1>
@@ -159,7 +152,7 @@ const About = ({ scrollRef }) => {
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
                 fill="currentColor"
-                className="ml-8 w-20 h-20 text-red-500 animate-bounce"
+                className="sm:ml-8 ml-5 sm:w-20 sm:h-20 w-16 h-16 text-red-500 animate-bounce"
               >
                 <path
                   fillRule="evenodd"
@@ -168,30 +161,16 @@ const About = ({ scrollRef }) => {
                 />
               </svg>
             </div>
-            <p className="mt-6 max-w-7xl text-md sm:text-lg leading-8 text-gray-500">
+            <p className="sm:mt-6 mt-3 text-md sm:text-lg text-gray-800">
               This time, our new collection will shelter you from the harsh
               elements of a world that doesn't care if you live or die.
             </p>
           </div>
           <div className="mx-auto sm:mt-6 mt-3 max-w-2xl lg:mx-0 lg:max-w-none">
-            <div className="grid grid-cols-2 sm:place-items-center place-items-center gap-x-8 gap-y-6 text-base font-semibold leading-7 text-gray-900 md:grid-cols-2 md:flex lg:gap-x-10 underline underline-offset-4 sm:no-underline">
-              {links.map((link) => (
-                <a
-                  key={link.name}
-                  href={link.href}
-                  className="hover:translate-y-1 transition-all hover:text-red-500 "
-                >
-                  {link.name}{" "}
-                  <p className="hidden sm:block" aria-hidden="true">
-                    &rarr;
-                  </p>
-                </a>
-              ))}
-            </div>
-            <dl className="sm:mt-10 mt-6 sm:place-items-start place-items-center grid grid-cols-2 gap-8 sm:grid-cols-2 lg:grid-cols-4">
+            <dl className="sm:mt-10 mt-6 sm:place-items-start place-items-stretch grid grid-cols-2 gap-8 sm:grid-cols-2 lg:grid-cols-4">
               {stats.map((stat) => (
                 <div key={stat.name} className="flex flex-col-reverse group">
-                  <dt className="text-base leading-7 text-gray-500 group-hover:-translate-y-10 transition-all delay-75">
+                  <dt className="text-base text-center leading-7 text-gray-500 group-hover:-translate-y-10 transition-all delay-75">
                     {stat.name}
                   </dt>
                   <dd className="text-2xl text-center sm:text-start font-bold leading-9 tracking-tight text-gray-900 group-hover:translate-y-10 transition-all delay-75 ">
@@ -201,7 +180,7 @@ const About = ({ scrollRef }) => {
               ))}
             </dl>
 
-            <dl className="sm:mt-10 mt-6 place-items-center sm:place-items-start grid grid-cols-2 gap-8 sm:grid-cols-2 lg:grid-cols-4">
+            <dl className="sm:mt-10 mt-3 sm:place-items-start place-items-stretch grid grid-cols-2 gap-6 sm:grid-cols-2 lg:grid-cols-4">
               {socials.map((item) => (
                 <div
                   key={item.name}

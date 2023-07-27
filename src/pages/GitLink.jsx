@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 
 const GitLink = () => {
   return (
-    <div className="group fixed sm:bottom-16 sm:right-16 bottom-12  right-10 z-50 rounded-full">
+    <div className="group fixed sm:bottom-16 right-0 bottom-5 z-50 rounded-full mr-6 md:mr-20 sm:mr-24">
       <Link
-        to="https://github.com/ahmad5aif/E-com-dynamic-website"
+        to="https://github.com/ahmad5aif/E-commerce-website-dynamic"
         target="_blank"
       >
         <svg
@@ -20,7 +20,7 @@ const GitLink = () => {
           ></path>
         </svg>
       </Link>
-      <p className="text-sm font-semibold absolute top-8 -left-3 text-center bg-slate-200 py-1 px-2 rounded-lg shadow-sm invisible group-hover:visible transition-all delay-500 group-hover:top-14">
+      <p className="text-sm font-semibold absolute top-8 -left-5 text-center bg-slate-200 sm:py-1 sm:px-2 px-1 rounded-lg shadow-sm invisible sm:group-hover:visible transition-all delay-500 sm:group-hover:top-12 group-hover:top-12 ">
         Github repository
       </p>
     </div>

@@ -1,14 +1,13 @@
 import React, { useState } from "react";
 import Profile_nav from "./Profile_nav";
 import { Link, useNavigate } from "react-router-dom";
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 import { isLogin } from "../../hooks/loginSlice";
 import SearchPanel from "./SearchPanel";
 import { signOut } from "firebase/auth";
 import { firebaseAuth } from "../../firebase/service";
 
 function Navbar({ handleScroll }) {
-  const dispatch = useDispatch();
   const user = useSelector((state) => {
     return state.user;
   });
@@ -78,9 +77,9 @@ function Navbar({ handleScroll }) {
           <div className="flex flex-shrink-0 items-center">
             <Link
               to="/"
-              className="text-lg font-sans font-semibold text-gray-900 cursor-pointer"
+              className="text-lg font-sans font-medium text-gray-900 cursor-pointer"
             >
-              PhoneBazaar.com
+              PhoneBazaar
             </Link>
           </div>
 
@@ -125,7 +124,7 @@ function Navbar({ handleScroll }) {
             {isOpenPanel && <SearchPanel setIsOpenPanel={setIsOpenPanel} />}
             <Link
               to={"/cart/" + user[2]}
-              className="rounded-full p-1 text-gray-900 hover:bg-red-500 hover:text-white hover:drop-shadow-xl transition ease-in-out hover:-translate-z-1 hover:scale-105 hidden md:block"
+              className="rounded-full p-1 text-gray-900 hover:bg-red-500 hover:text-white hover:drop-shadow-xl transition ease-in-out hover:-translate-z-1 hover:scale-105 hidden md:block relative"
             >
               <span className="sr-only">Go to cart</span>
               <svg
@@ -142,6 +141,9 @@ function Navbar({ handleScroll }) {
                   d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
                 />
               </svg>
+              <span className="hidden text-sm absolute px-1 -top-1 -right-1 z-10 bg-red-500  text-white rounded-full">
+                0
+              </span>
             </Link>
 
             {login === true ? (
@@ -222,7 +224,7 @@ function Navbar({ handleScroll }) {
                 viewBox="0 0 24 24"
                 strokeWidth=".5"
                 stroke="currentColor"
-                className="w-24 h-24 text-gray-600"
+                className="w-20 h-20 text-gray-600"
               >
                 <path
                   strokeLinecap="round"
@@ -234,12 +236,14 @@ function Navbar({ handleScroll }) {
               {login ? (
                 <div className="flex-1 ">
                   <p
-                    className="block font-bold text-gray-900 text-center"
+                    className="block font-medium text-base text-gray-900 text-center"
                     id={user[2]}
                   >
                     {user[0]}
                   </p>
-                  <p className="mt-1 text-gray-600">{user[1]}</p>
+                  <p className="mt-1 font-medium text-base text-gray-600">
+                    {user[1]}
+                  </p>
                 </div>
               ) : (
                 <div className="w-full grid grid-cols-2 divide-x divide-gray-900/5">
@@ -249,7 +253,7 @@ function Navbar({ handleScroll }) {
                       setOpenMobileNav(false);
                       document.querySelector("body").style.overflow = "auto";
                     }}
-                    className="flex items-center justify-center gap-x-2.5 p-3 text-md font-semibold rounded-sm leading-6 text-red-500 hover:bg-gray-100"
+                    className="flex items-center justify-center gap-x-2.5 p-3 text-base font-semibold rounded-sm leading-6 text-red-500 hover:bg-gray-100"
                   >
                     Sign in
                   </button>
@@ -259,7 +263,7 @@ function Navbar({ handleScroll }) {
                       setOpenMobileNav(false);
                       document.querySelector("body").style.overflow = "auto";
                     }}
-                    className="flex items-center justify-center gap-x-2.5 p-3 text-md font-semibold rounded-sm leading-6 text-red-500 hover:bg-gray-100"
+                    className="flex items-center justify-center gap-x-2.5 p-3 text-base font-semibold rounded-sm leading-6 text-red-500 hover:bg-gray-100"
                   >
                     Sign up
                   </button>
@@ -402,7 +406,7 @@ function Navbar({ handleScroll }) {
                 </button>
               )}
             </div>
-            <div className="p-3 mt-2 mb-4 h-28 rounded-2xl bg-white shadow-lg"></div>
+            <div className="p-3 mt-2 mb-4 h-24 rounded-2xl bg-white shadow-lg"></div>
           </div>
         )}
       </nav>

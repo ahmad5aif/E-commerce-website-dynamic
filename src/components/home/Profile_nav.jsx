@@ -59,9 +59,9 @@ const Profile_nav = ({ user, setOpenProfile }) => {
           </div>
         </div>
         <div className="grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50">
-          <a
-            href="#"
-            className="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100"
+          <button
+            disabled
+            className="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100 cursor-not-allowed"
           >
             <svg
               className="h-5 w-5 flex-none text-gray-800 hover:text-red-500"
@@ -79,7 +79,7 @@ const Profile_nav = ({ user, setOpenProfile }) => {
               />
             </svg>
             View orders
-          </a>
+          </button>
           <button
             className="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100"
             onClick={handleLogout}
